@@ -1,1 +1,0 @@
-# symfony-demo-pro
