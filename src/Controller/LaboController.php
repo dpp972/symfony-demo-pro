@@ -7,7 +7,7 @@ class LaboController
 
     public function index()
     {
-        var_dump('okaayy !');
+        dump('okaayy !');
         die();
     }
 }
