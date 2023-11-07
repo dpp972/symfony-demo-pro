@@ -1,6 +1,22 @@
 doctrine:
     dbal:
-        url: '%env(resolve:DATABASE_URL)%'
+        default_connection: default
+
+        connections:
+          default:
+            dbname: sf_demopro
+            host: localhost
+            port: 3306
+            user: root
+            password:             
+            driver: pdo_mysql
+            server_version: '5.7'
+            charset: utf8
+            #default_table_options:
+              #charset: utf8
+              #collate: utf8
+              #collation: utf8
+              #engine: InnoDB
 
         # IMPORTANT: You MUST configure your server version,
         # either here or in the DATABASE_URL env var (see .env file)
